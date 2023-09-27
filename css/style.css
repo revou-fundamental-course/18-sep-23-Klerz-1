@@ -114,9 +114,38 @@ select {
     width: 1.2em;
 }
 
+.error-message {
+    margin-top: 0;
+    color: red;
+    font-size: 0.8em;
+}
+
 .icon-avatar {
     display: flex;
     justify-content: center;
-    width: 10%;
+    max-width: 10px;
     padding: 200px,20px,20px,20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        flex-direction: column;
+    }
+    
+    .content-left {
+        width: 100&;
+    }
+    
+    .content-right {
+        width: 100%;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .nav {
+        display: none !important;
+        /*flex-direction: column;*/
+    }
 }
