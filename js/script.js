@@ -13,4 +13,28 @@ document.getElementById("button").addEventListener("click", function() {
         document.getElementById('interest-error').innerText = 'Interest Cannot Be Blank';
     }
 
-})
+});
+
+   const carouselSlide = document.querySelectorAll(".image")
+    let curentIndex = 0;
+    let interval = 2000;
+
+    /*document.getElementById("next-btn").addEventListener("click" , function() {
+        nextSlide();
+
+    }) */
+
+    function nextSlide() {
+        carouselSlide[curentIndex].classList.remove("active");
+        curentIndex = (curentIndex + 1) % carouselSlide.length;
+        carouselSlide[curentIndex].classList.add("active");
+    }
+
+    function startSlide() {
+        setInterval{nextSlide, interval};
+    }
+
+    (function(){
+        startSlide();
+        
+    })()
