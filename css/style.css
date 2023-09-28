@@ -1,5 +1,5 @@
 body {
-    padding: 0 25px;
+    padding: 0px;
     font-family: sans-serif;
 }
 
@@ -33,6 +33,14 @@ main {
     color: black;
 }
 
+.btnback {
+    display: flex;
+    align-items: center;
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    color: white;
+}
+
 .nav-item:hover {
     background-color: gray;
 }
@@ -47,16 +55,21 @@ main {
 
 .content {
     display: flex;
+    
 }
 
 .content-left {
+    margin-left: 20px;
     box-sizing: border-box;
+    border: 2px solid black;
     width: 50%;
 }
 
 .content-right {
     box-sizing: border-box;
     width: 50%;
+    padding-left: 50px;
+    margin-right: 20px;
 }
 
 .contact-us {
@@ -78,10 +91,7 @@ main {
     border-radius: 5px;
 }
 
-.tombol {
-    text-decoration: none;
-    color: black;
-    
+.btn {
     display:inline-block;
     align-items: center;
     justify-content: center;
@@ -95,7 +105,7 @@ main {
     border-radius: 5px;
 }
 
-.tombol:hover {
+.btn:hover {
     background: black;
     color: gray;
 }
@@ -160,7 +170,7 @@ select {
     display: flex;
     justify-content: center;
     background: lightgray;
-    
+    border: 1px solid red;
     border-radius: 100%;
     width: 2em;
     align-items: center;
@@ -176,6 +186,7 @@ select {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
+    border: 1px solid blue;
 }
 
 .bottom-tittle {
