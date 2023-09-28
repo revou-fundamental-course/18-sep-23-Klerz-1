@@ -33,6 +33,7 @@ document.getElementById("button").addEventListener("click", function() {
         carouselSlide[curentIndex].classList.remove("active");
         curentIndex = (curentIndex + 1) % carouselSlide.length;
         carouselSlide[curentIndex].classList.add("active");
+        console.log("Hello world");
     }
 
     function startSlide() {
