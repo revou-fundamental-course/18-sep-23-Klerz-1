@@ -79,6 +79,9 @@ main {
 }
 
 .tombol {
+    text-decoration: none;
+    color: black;
+    
     display:inline-block;
     align-items: center;
     justify-content: center;
@@ -90,6 +93,11 @@ main {
     margin-bottom: 50px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.tombol:hover {
+    background: black;
+    color: gray;
 }
 
 
