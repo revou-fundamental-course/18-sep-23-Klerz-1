@@ -1,5 +1,6 @@
 body {
     padding: 0 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 main {
@@ -127,10 +128,10 @@ select {
     font-size: 0.8em;
 }
 
-.icon-avatar {
+.icon{
     display: flex;
     justify-content: center;
-    max-width: 10px;
+    max-width: 50px;
     padding: 200px,20px,20px,20px;
 }
 
@@ -152,7 +153,7 @@ select {
     }
 
     .nav {
-        display: none !important;
-        /*flex-direction: column;*/
+        /*display: none !important;*/
+        flex-direction: column;
     }
 }

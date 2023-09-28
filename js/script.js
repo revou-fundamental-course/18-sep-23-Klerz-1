@@ -13,8 +13,9 @@ document.getElementById("button").addEventListener("click", function() {
         document.getElementById('interest-error').innerText = 'Interest Cannot Be Blank';
     }
 
+    
 });
-
+    console.log("Hello world");
    const carouselSlide = document.querySelectorAll(".image")
     let curentIndex = 0;
     let interval = 2000;
@@ -31,10 +32,10 @@ document.getElementById("button").addEventListener("click", function() {
     }
 
     function startSlide() {
-        setInterval{nextSlide, interval};
+        setInterval(nextSlide, interval);
     }
 
     (function(){
         startSlide();
-        
+
     })()
