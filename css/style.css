@@ -33,17 +33,11 @@ main {
     color: black;
 }
 
-.btnback {
-    display: flex;
-    align-items: center;
-    padding: 5px 20px 5px 20px;
-    text-decoration: none;
-    color: white;
-}
-
 .nav-item:hover {
     background-color: gray;
 }
+
+
 
 .content-title {
     padding: 20px 0;
@@ -91,6 +85,11 @@ main {
     border-radius: 5px;
 }
 
+.button:hover {
+    background: black;
+    color: gray;
+}
+
 .btn {
     display:inline-block;
     align-items: center;
@@ -110,10 +109,12 @@ main {
     color: gray;
 }
 
-
-.button:hover {
-    background: black;
-    color: gray;
+.btnback {
+    display: flex;
+    align-items: center;
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    color: white;
 }
 
 .content-form {
@@ -147,7 +148,7 @@ select {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
     border-radius: 20%;
 }
@@ -170,10 +171,22 @@ select {
     display: flex;
     justify-content: center;
     background: lightgray;
-    border: 1px solid red;
+    
     border-radius: 100%;
     width: 2em;
     align-items: center;
+}
+
+.circle2 {
+    font-size: var(--normal-font-size);
+    background-color: var(--base-color);
+    clip-path: circle(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--padding-35px);
+    height: var(--padding-35px);
+    margin-right: var(--normal-font-size);
 }
 
 
@@ -186,7 +199,7 @@ select {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    border: 1px solid blue;
+    
 }
 
 .bottom-tittle {
@@ -211,17 +224,6 @@ select {
     padding: 10px 10px 10px 10px ;
 }
 
-.circle2 {
-    font-size: var(--normal-font-size);
-    background-color: var(--base-color);
-    clip-path: circle(50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: var(--padding-35px);
-    height: var(--padding-35px);
-    margin-right: var(--normal-font-size);
-}
 
 .item-desc {
     margin: 10px 10px 10px 10px;
@@ -266,10 +268,13 @@ select {
     
     .content-left {
         width: 100%;
+        margin: 0px;
     }
     
     .content-right {
         width: 100%;
+        margin: 0px;
+        padding: 10px 0px 10px 0px;
     }
 
     .navigation {
@@ -280,4 +285,6 @@ select {
         /*display: none !important;*/
         flex-direction: column;
     }
+
+
 }
