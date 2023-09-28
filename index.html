@@ -24,7 +24,7 @@
     <main>
         <div id="title" class="content-title">
             <div>
-                <h1>Top Rated E-Groceries Shop in Indonesia</h1>
+                <h1>Top Rated E-Groceries Shop in Indonesian</h1>
             </div>
             <div>
                 <span>Everyday with best ingredient</span>
@@ -36,19 +36,24 @@
                     <img src="asset/placeholder-image.png" class="image" alt="slider image">
                     <img src="asset/gambar 1.png" class="image" alt="slider image">
                     <img src="asset/gambar 2.jpg" class="image" alt="slider image">
-                    <button id="next-btn" onclick="nextSlide">Next Image</button>
-                    <span>"setiap hari beli sayur buah yang fresh disini"</span>
-                </div>
-            </div>
-            <div id="content-right" class="content-right">
-                <div id="contact-us">
-                    <H2>Contact Us</H2><br>
+                    <!--<button id="next-btn" onclick="nextSlide">Next Image</button>-->
+                    <span ><i>"setiap hari beli sayur buah yang fresh disini"</i></span>
                     
                 </div>
+                    <div class="profile"><img src="asset/avatar_icon2.png" id="icon-avatar" class="icon">
+                    <p >Florence Hughes<br>
+                    <i>ibu rumah tangga</i></p></div>
+            </div>
+            <div id="content-right" class="content-right">
+                
                 <form name="contact-form" class="content-form">
+                    <div id="contact-us" class="contact-us">
+                    <H2 >Contact Us</H2><br>
+                    Sales Akan Menghubingi anda 1x24 jam setelah data kami terima.
+                    </div>
                     <label for="your-name">Your Name:</label>
                     <input type="text" name="your-name" placeholder="First and last name">
-                    <p id="naem-error" class="error-message"></p>
+                    <p id="name-error" class="error-message"></p>
 
                     <label for="email">Email Address:</label>
                     <input type="email" name="email" placeholder="example@email.com">
@@ -56,24 +61,35 @@
 
                     <label for="interest">What are you interested in?</label>
                     <select type="select" name="interest">
-                    <p id="interest-error" class="error-message"></p>
+                    
                         <option value="">-- Select Interest --</option>
                         <option value="Football">Football</option>
                         <option value="Badminton">Badminton</option>
                     </select>
+                    <p id="interest-error" class="error-message"></p>
 
                     <div id="button" type="submit" class="button">SEND</d>
                 </form>
             </div>
         </div>
     </main>
-    <div id="our-products">
-        <img src="asset/avatar_icon2.png" id="icon-avatar" class="icon">
+    <div id="our-products" class="our-products">
+        <div id="product-desc" class="product-desc"></div>
+        
         <div class="circle">
             1
+            <p></p>
+        </div>
+        <div class="circle">
+            2
+            <p></p>
+        </div>
+        <div class="circle">
+            3
+            <p></p>
         </div>
     </div>
-    <footer><p class="footer">Term of Service   Privacy </p></footer>
+    <footer class="footer"><p >Term of Service   Privacy </p></footer>
     <script src="js/script.js"></script>
 </body>
 </html>

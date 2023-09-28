@@ -1,6 +1,6 @@
 body {
     padding: 0 25px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: sans-serif;
 }
 
 main {
@@ -59,10 +59,11 @@ main {
     width: 50%;
 }
 
-
-.active {
-    display: block;
+.contact-us {
+    margin-bottom: 50px;
 }
+
+
 
 .button {
     display: flex;
@@ -86,6 +87,7 @@ main {
     flex-direction: column;
     padding: 20px;
     background: lightgray;
+    border-radius: 2%;
 }
 
 input {
@@ -100,26 +102,53 @@ select {
 
 .image {
     width: 100%;
-    display: hidden;
+    display: hidden !important;
 }
+
+.active {
+    display: block;
+}
+
 .content-image {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 20%;
 }
 
-/*.content-image span {
+.content-image span {
     color: gray;
-}*/
+    padding-top: 30px;
+}
+
+
+
+.profile {
+    display: flex;
+    justify-content: center;
+    padding: 5px 5px 5px 5px;
+    border-bottom: 5px;
+}
 
 .circle {
     display: flex;
     justify-content: center;
     background: lightgray;
+    margin-top: 1em;
     border-radius: 50%;
-    width: 1.2em;
+    width: 2em;
+    align-items: center;
+}
+
+.our-products {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-desc {
+
 }
 
 .error-message {
@@ -129,10 +158,13 @@ select {
 }
 
 .icon{
-    display: flex;
-    justify-content: center;
+    padding: 10px 10px 5px 20px;
     max-width: 50px;
-    padding: 200px,20px,20px,20px;
+}
+
+.footer {
+    padding-top: 10px;
+    border-top: 1px solid gray;
 }
 
 @media only screen and (max-width: 600px) {
